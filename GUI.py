@@ -43,7 +43,7 @@ class GUI:
 
 
 if __name__ == '__main__':
-    gui = GUI('./images/3.png')
+    gui = GUI('./images/1.png')
     gui.read_show_save_img('./outfile/3.png')
     gui.show_color_img_in_plt()
     gui.show_gray_img_in_plt()
