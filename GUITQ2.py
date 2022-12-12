@@ -21,9 +21,9 @@ class GUI:
                 # 【1】读入图像
                 img = cv2.imread(path, 1)  # 0是以灰度形式读入。1是彩色，-1是包含alpha通道
                 # print(img[0][0])
-                BGR = numpy.array([255, 218, 170])
-                upper = BGR + 15
-                lower = BGR - 15
+                BGR = numpy.array([255,98,255])
+                upper = BGR + 50
+                lower = BGR - 50
                 mask = cv2.inRange(img, lower, upper)
 
                 # 先说输入！！！

@@ -12,7 +12,7 @@ class GUI:
         读取、显示、存储图像
         """
         # 【1】读入图像
-        img = cv2.imread(self.infile, 0)  # 0是以灰度形式读入。1是彩色，-1是包含alpha通道
+        img = cv2.imread(self.infile, 1)  # 0是以灰度形式读入。1是彩色，-1是包含alpha通道
         # 【2】显示图像+窗口操作
         cv2.namedWindow('image', cv2.WINDOW_NORMAL)
         # 第二个参数，默认是窗口不可改。normal代表窗口可以调整大小
